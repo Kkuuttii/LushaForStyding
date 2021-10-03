@@ -1,0 +1,22 @@
+.search-and-filters {
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.type-to-search {
+    background-color:  rgba(176, 224, 230, 0.295);
+    color:rgba(133, 133, 241, 0.678);
+    Border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(111, 111, 241);
+    
+}
+
+.button-for-filtering {
+    margin: 3px;
+    border-radius: 10px;
+    border-color: rgb(111, 111, 241);
+    box-shadow: 0 0 10px 0 rgba(133, 133, 241, 0.39) inset, 0 0 10px 4px rgba(133, 133, 241, 0.39);
+    color: rgb(111, 111, 241);
+  }
