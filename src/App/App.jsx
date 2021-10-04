@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../FirstHeader/firstHeader.js";
+import Header from "../FirstHeader/firstHeader.jsx";
 import SearchAndFilters from "../SearchAndFilters/SearchAndFilters";
 import CheckLists from "../CheckLists/CheckLists"
-import AddNewCheck from "../AddNewCheck/AddNewCheck.js";
+import AddNewCheck from "../AddNewCheck/AddNewCheck.jsx";
 import "./App.css"
 function App () {
   return (
