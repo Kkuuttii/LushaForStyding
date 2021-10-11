@@ -28,3 +28,15 @@
 .done {
 	text-decoration: line-through;
 }
+
+.important-button {
+    border-radius: 10px;
+    border-color: rgba(251, 89, 116, 0.809);
+    box-shadow: 0 0 4px 0 rgba(251, 89, 116, 0.523) inset, 0 0 7px 1px rgba(251, 89, 116, 0.523);
+    color: rgb(53, 53, 240);
+}
+
+.important-text {
+	font-weight: bold;
+	color: rgba(251, 89, 116, 0.938);
+}
