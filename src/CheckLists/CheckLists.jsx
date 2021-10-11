@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import CheckLine from "../CheckLine/CheckLine";
 import "./CheckLists.css"
 function CheckLists() {
-
-		let checkListItems = [
+	let [checkListItems, setCheckListItems] = useState(
+		[
 			{
 				label: "Drink coffee",
 				important: true,
@@ -11,7 +11,7 @@ function CheckLists() {
 			},
 			{
 				label: "Make awesome app",
-				important: false, 
+				important: false,
 				done: false
 			},
 			{
@@ -24,17 +24,29 @@ function CheckLists() {
 				important: false,
 				done: true
 			}
-		];
+		]
+	);
 
-		let checkLine = checkListItems.map(item => {
-			return <CheckLine label={item.label} important={item.important} done={item.done}/> //вызвали функцию(компонент) CheckLine с аргументами props.label и props.important 
-		})
+	function deleteLine(i) {
+		setCheckListItems((prev) => prev.filter((_item, index) => i !== index));
+	}
 
-		/** мы можем использовать в jsx кавычки "" для передачи строк, а так же {} для передачи js кода в important передастся результат выполнения кода */
-    return (
-        <div className = "checkLists">
-					{ checkLine }
-        </div>
-    )
+	let checkLine = checkListItems.map((item, index) => {
+		return <CheckLine
+			index={index}
+			label={item.label}
+			important={item.important}
+			done={item.done}
+			onDelete={deleteLine}
+		/> //вызвали функцию(компонент) CheckLine с аргументами props.label и props.important 
+	})
+
+	/** мы можем использовать в jsx кавычки "" для передачи строк, а так же {} для передачи js кода в important передастся результат выполнения кода */
+	return (
+		<div
+			className="checkLists">
+			{checkLine}
+		</div>
+	)
 }
 export default CheckLists;
