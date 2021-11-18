@@ -13,10 +13,18 @@
     
 }
 
-.button-for-filtering {
+.button-for-filtering-not-active {
     margin: 3px;
     border-radius: 10px;
     border-color: rgb(111, 111, 241);
     box-shadow: 0 0 10px 0 rgba(133, 133, 241, 0.39) inset, 0 0 10px 4px rgba(133, 133, 241, 0.39);
     color: rgb(111, 111, 241);
+  }
+
+  .button-for-filtering-active {
+    margin: 3px;
+    border-radius: 10px;
+    border-color: rgb(217, 241, 111);
+    box-shadow: 0 0 10px 0 rgba(221, 241, 133, 0.39) inset, 0 0 10px 4px rgba(133, 133, 241, 0.39);
+    color: rgb(206, 241, 111);
   }

@@ -40,3 +40,7 @@
 	font-weight: bold;
 	color: rgba(251, 89, 116, 0.938);
 }
+
+.hidden {
+	display: none;
+}
